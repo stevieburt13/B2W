@@ -1,0 +1,386 @@
+/*  COLOUR REFERENCES 
+Green: #79B044 
+Salmon: #DD5638 
+Blue Grey: #3E4249 
+
+SEXY TEXT! 
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+
+*/ 
+
+/* ==== GLOBAL ==== */
+
+small {
+	font-size: 0.7em;
+	font-weight: 300;
+}
+
+.lead {
+	font-weight: 600;
+}
+
+body {
+	font-family: 'Raleway', Arial, sans-serif; 
+	font-size: 16px;
+	font-weight: 400;
+}
+#bgd-img {
+	background-image: url(../img/tile.jpg);
+	background-repeat: round;
+}
+
+/* ==== GLOBAL ==== */
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+a:link, a:visited {
+	color: #dd5638;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
+}
+
+button, input, .btn, a.btn {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	color: white;
+
+}
+
+button:focus {
+	outline: none !important;
+}
+
+.btn {
+	font-weight: bold;
+
+}
+.btn-danger {
+	background-color: #DD5638;
+	border-color: #d95131;
+}
+
+.btn-success {
+	background-color: #79B044;
+	border: none;
+}
+
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.modal-content {
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+	background: #ccc;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 43px;
+	margin: 0 5px 20px 0;
+	padding: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+
+.badge.social.twitter:hover {
+	background: #55acee;
+}
+
+.badge.social.facebook:hover {
+	background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+	background: #db4b39;
+}
+
+blockquote {
+	padding: 20px 0 0 0;
+	border: none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite {
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {
+	display: none;
+}
+
+/* ==== HERO ==== */
+#hero {
+	background: url('../img/hero-bg.jpg') 50% center repeat fixed; /* paralex background */
+	min-height: 500px;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+#hero article p {
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+}
+
+#hero img {
+	max-width: 100%;
+}
+
+#hero .hero-text {
+	margin-top: 30px;
+}
+
+#price-timeline {
+	margin: 30px 0 60px;
+	text-align: center;
+}
+
+/* Create price boxes*/ 
+#price-timeline .price {
+	display: inline-block;
+	margin: 0 2% 0 0;
+	width: 30%;
+	background-color: #3E4249;
+	padding: 10px 20px 30px;
+	vertical-align: top;
+	position: relative;
+	font-size: 0.9em;
+}
+
+#price-timeline .price.active {
+	background-color: #DD5638;
+}
+
+#price-timeline .price span {
+	background-color: #101010;
+	display: block;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 24px;
+	border-radius: 100%; /* makes it a circle */
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+}
+
+#price-timeline h4 {
+	margin: 0 0 10px;
+	font-size: 1.2em;
+}
+
+/* ==== LAYOUT ==== */
+
+section {
+	padding: 80px 0;
+}
+
+.section-header {
+	text-align: center;
+}
+section h2 {
+	margin: 20px 0 40px;
+}
+
+section h3 {
+	margin: 30px 0;
+}
+
+#optin {
+	background: #3E4249;
+	padding: 20px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-size: 1.2em;
+}
+
+#optin p {
+	margin: 7px 0 0 0;
+
+}
+
+#who-benefits {
+	background-color: white;
+}
+
+#course-features {
+	background: #3E4249;
+	color: white;
+	text-align: center;
+}
+
+#project-features {
+	text-align: center;
+}
+
+#featurette {
+	background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed ;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+/* ==== TESTIMONILAS ==== */
+
+#instructor {
+	background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+#instructor h2 {
+	margin: 0 0 20px;
+}
+
+#instructor .num {
+	display: table;  /* <--- VERTICALLY ALINGED, PARENT MUST BE display: table; */
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	line-height: 24px;
+	height: 140px;
+	width: 140px;
+	text-align: center;
+	background: #dd5638;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+
+}
+
+#instructor .num .num-content { /* TRICK TO MAKE CONTENT VERTICALLY ALIGNED. Also see above */ 
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#instructor .num span {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#kudos {
+	text-align: center;
+}
+
+.testimonial {
+	margin-bottom: 60px;
+}
+
+.testimonial img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+/* ==== SIGN UP ==== */
+
+#signup {
+	text-align: center;
+	background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+	background-size: cover;
+	color: white;
+	padding: 140px 0;
+}
+
+#signup h2 {
+	font-weight: normal;
+
+}
+
+#signup h2 strong {
+	border-bottom: solid 2px #dd5638;
+
+}
+
+#signup button {
+	font-size: 24px;
+}
+
+/* ==== FOOTER ===== */
+
+footer {
+	background-color: #3e4249;
+	color: white;
+	padding: 20px 0 20px;
+	font-size: 12px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer a:link, footer a:visited {
+	color: white;
+}
+
+footer a:hover {
+	color: #dd5638;
+}
+
+footer li.signup-link a {
+	color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+font-weight: bold;
+}
+
+/* ==== ICON SPRITE ===== */
+
+i.bi {
+	font-size: 2.5em;
+	line-height: 1.5em;
+}
+
+/* =============== MEDIA QUERIES ================= */
+
+
+
+
