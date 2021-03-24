@@ -9,14 +9,15 @@ text-rendering: optimizeLegibility;
 
 */ 
 
-/* ==== GLOBAL ==== */
+/* ==== GENERAL ==== */
+
 
 small {
 	font-size: 0.7em;
 	font-weight: 300;
 }
 
-.lead {
+p .lead {
 	font-weight: 600;
 }
 
@@ -54,6 +55,10 @@ h4 {
 	font-size: 18px;
 }
 
+p {
+	margin: 0 0 15px;
+}
+
 a:link, a:visited {
 	color: #dd5638;
 	text-decoration: none;
@@ -82,6 +87,11 @@ button:focus {
 .btn-danger {
 	background-color: #DD5638;
 	border-color: #d95131;
+}
+
+.btn-danger:hover {
+	background-color: #c43f21;
+	border-color: #ae381e;
 }
 
 .btn-success {
@@ -216,8 +226,16 @@ blockquote:before {
 
 /* ==== LAYOUT ==== */
 
+.row + .row {
+	margin-top: 20px;
+}
+
 section {
 	padding: 80px 0;
+}
+
+section.main-content {
+	padding: 40px 0;
 }
 
 .section-header {
@@ -229,6 +247,33 @@ section h2 {
 
 section h3 {
 	margin: 30px 0;
+}
+
+#primary {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.feature-image {
+	display: table;
+	width: 100%;
+}
+
+.feature-image-default {
+	background: url('../img/stuff-feature.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image-default-alt {
+	background: url('../img/hipster-stuff.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
 }
 
 #optin {
@@ -343,6 +388,171 @@ section h3 {
 	font-size: 24px;
 }
 
+/* =============== BLOG STYLES ================= */
+
+
+.post, .widget, #comments{
+	position: relative;
+	border: solid 1px #ddd;
+	background: white;
+	margin: 0 0 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.post header, .post .post-excerpt, .post .post-body, #comments, .comments-wrap {
+	padding: 20px;
+}
+
+.post header h1, .post header h3 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+	font-size: 24px;
+}
+
+.post .post-image {    /* for wordpress skeleton theme compatibility */
+	height: auto;
+}
+
+.post-feature-image-default {
+	background: url('../img/hero-bg.jpg') no-repeat;
+	background-size: cover;
+}
+
+.post-details {
+	font-size: 12px;
+	width: 90%;
+}
+
+.post-details i.bi {
+	padding-left: 10px;
+}
+
+.post-details i.bi:first-child {
+	padding: 0;
+}
+
+/* ==== NUMBER COMMENTS BADGE ===== */
+
+.post-comments-badge {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background: #79B044;
+	text-align: center;
+	display: table;
+}
+
+.post-comments-badge a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.post-comments-badge i.bi {
+	display: block;
+	font-size: 15px;
+	padding: 0;
+	margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+	background-color: #DD5638;
+}
+
+
+/* ==== WIDGETS =====  (SEE .post at top of blog styles too) */
+
+.widget {
+	padding: 20px;
+}
+
+.widget h4 {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: solid 1px #ddd;
+}
+
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li {
+	margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+	position: relative;
+	left: 1px;
+}
+
+/* ==== POST COMMENTS SECTION ===== */
+
+#comments h3 {
+	text-align: center;
+}
+
+#comments h4 {
+	font-size: 1.3em;
+}
+
+#comments ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#comments ol li {
+	background: rgba(0,0,0,0.02);
+	padding: 10px 20px;
+	margin: 10px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-border-radius: 4px;
+	border: rgba(0,0,0,0.03);
+}
+
+#comments ol li ol.children {
+	padding: 0;
+	list-style: none;
+	font-size: 0.96em;
+}
+
+#leave-comment {
+	margin: 40px 0 0;
+	padding: 20px 0 0;
+	border-top: solid 1px #eee;
+}
+
+
+/* ==== RESOURCES ===== */
+
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
+
+
 /* ==== FOOTER ===== */
 
 footer {
@@ -374,12 +584,176 @@ font-weight: bold;
 
 /* ==== ICON SPRITE ===== */
 
-i.bi {
+#course-features i.bi {
 	font-size: 2.5em;
 	line-height: 1.5em;
 }
 
+/* ==== FORMS ===== */
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+	color: #3E4249;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+}
+
+input[type="submit"], button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #cccccc;
+}
+
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+	outline: none;
+	border: none;
+	background: #DD5638;
+}
+
+.form-floating > label {
+	color: #3E4249;
+}
+
+.form-control:focus {
+	border-color: #eda392;
+	box-shadow: 0 0 0 0.25rem rgba(221, 86, 56, 0.3);
+}
+
+#contactMessage {
+	height: 150px;
+}
+
 /* =============== MEDIA QUERIES ================= */
+
+/* Medium size and below */
+@media screen and ( max-width: 991px) {
+
+	/* INSTRUCTOR */
+	#instructor .container {
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+	}
+}
+/* Small size and below */
+@media screen and ( max-width: 767px ) {
+	
+	/* HERO */
+	#hero .logo {
+		width: 50%;
+	}
+	#hero h1 {
+		text-align: center;
+	}
+	/* OPT IN */
+	#optin p {
+		margin: 0 0 10px;
+	}
+	/* FETURETTE */
+	#featurette iframe {
+		height: 240px;
+	}
+	/* INSTRUCTOR */
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 22px;
+	}
+
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	.resource:last-child {  /* === allows final resource to stack on a new line */
+		clear: both;
+	}
+}
+
+/* XS size and below */
+@media screen and ( max-width: 575px ) {
+
+	/* INSTRUCTOR */
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 16px;
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#instructor .num span {
+		font-size: 16px;
+	}
+
+	.col-xs-2 {
+	  flex: 0 0 auto;
+	  width: 16.6666666667%;
+	}
+
+	.resource {
+		width: 100%;
+		margin-right: 0;
+		min-height: 0;
+	}
+
+	.resource img {
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+
+	.resource h3, .resource .btn {
+		text-align: center;
+		display: block;
+	}
+
+}
+
+/* === xxs screen size === */
+@media screen and ( max-width: 520px ) {
+
+	/* INSTRUCTOR */
+	.col-xxs-12 {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+
+}
+
+
+
 
 
 
